@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer utilities {
+  @variants responsive {
+    .overlay-radial-gradient-md {
+      background: -moz-radial-gradient(right top, ellipse cover, rgba(10, 10, 10, 0.10) 40%, rgba(0, 0, 0, 0.95) 75%)
+    }
 
-* {
-  box-sizing: border-box;
+    .overlay-radial-gradient-sm {
+      background: radial-gradient(ellipse at right top, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.95) 75%)
+    }
+  }
 }
