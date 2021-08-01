@@ -5,11 +5,11 @@
 @layer utilities {
   @variants responsive {
     .overlay-radial-gradient-md {
-      background: radial-gradient(right top, ellipse cover, rgba(10, 10, 10, 0.10) 40%, rgba(0, 0, 0, 0.95) 75%)
+      background: -webkit-radial-gradient(right top, ellipse cover, rgba(10, 10, 10, 0.10) 40%, rgba(0, 0, 0, 0.95) 75%)
     }
 
     .overlay-radial-gradient-sm {
-      background: radial-gradient(ellipse at right top, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.95) 75%)
+      background-image: radial-gradient(ellipse at right top, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.95) 75%)
     }
   }
 }
