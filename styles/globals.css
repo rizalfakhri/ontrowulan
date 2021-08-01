@@ -5,7 +5,7 @@
 @layer utilities {
   @variants responsive {
     .overlay-radial-gradient-md {
-      background: -moz-radial-gradient(right top, ellipse cover, rgba(10, 10, 10, 0.10) 40%, rgba(0, 0, 0, 0.95) 75%)
+      background: radial-gradient(right top, ellipse cover, rgba(10, 10, 10, 0.10) 40%, rgba(0, 0, 0, 0.95) 75%)
     }
 
     .overlay-radial-gradient-sm {
