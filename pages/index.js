@@ -52,12 +52,12 @@ function Home() {
             <Carousel
               plugins={[
                 'infinite',
-                //{
-                  //resolve: autoplayPlugin,
-                  //options: {
-                    //interval: 3000,
-                  //}
-                //},
+                {
+                  resolve: autoplayPlugin,
+                  options: {
+                    interval: 3000,
+                  }
+                },
                 {
                   resolve: arrowsPlugin,
                   options: {
