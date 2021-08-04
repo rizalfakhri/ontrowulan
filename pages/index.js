@@ -26,12 +26,12 @@ function Home() {
       </Head>
 
       <main className="h-auto max-w-screen">
-        <div className="flex justify-between w-full h-16 max-w-6xl px-5 bg-white py-auto lg:hidden lg:px-5 justify-items-center bg-brand-green">
-            <img src="/logo.png" className="w-12 h-12 my-auto" alt="" />
+        <div className="flex justify-between w-full max-w-6xl px-5 bg-white h-14 py-auto lg:hidden lg:px-5 justify-items-center bg-brand-green">
+            <img src="/logo.png" className="my-auto w-9 h-9" alt="" />
             <Menu className="my-auto w-9 h-9 text-brand-gold-darker" />
         </div>
         <div className="justify-between hidden w-full max-w-6xl mx-auto bg-white lg:flex lg:px-5 h-14 justify-items-center">
-          <h1 className="text-2xl font-black tracking-[.7rem] text-bold uppercase my-auto">Ontrowulan</h1>
+          <h1 className="text-xl font-black tracking-[.8rem] text-bold uppercase my-auto">Ontrowulan</h1>
           <div className="flex items-center space-x-3">
             <Instagram className="text-white opacity-50 w-7 h-7"/>
             <Facebook className="text-white opacity-50 w-7 h-7"/>
@@ -41,13 +41,13 @@ function Home() {
         <div className="flex flex-col content-center h-screen">
           <div className="flex items-center justify-center h-[90%] lg:h-[80%] w-full relative ">
             <div className="absolute top-0 z-20 w-full h-10 bg-gradient-to-b from-[#101010] to-transparent lg:h-40 hidden lg:block"></div>
-            <div className="absolute top-0 z-30 items-center hidden w-full h-20 max-w-6xl lg:flex lg:px-5 lg:h-28 space-x-16 ">
-              <img src="/logo.png" className="my-auto lg:w-16 lg:h-16 h-14 w-14" alt="" />
-              <h5 className="text-lg text-white hover:text-brand-gold transition duration-150 hover:cursor-pointer">Home</h5>
-              <h5 className="text-lg text-white hover:text-brand-gold transition duration-150 hover:cursor-pointer">About Us</h5>
-              <h5 className="text-lg text-white hover:text-brand-gold transition duration-150 hover:cursor-pointer">Our Products</h5>
-              <h5 className="text-lg text-white hover:text-brand-gold transition duration-150 hover:cursor-pointer">Our Seller</h5>
-              <h5 className="text-lg text-white hover:text-brand-gold transition duration-150 hover:cursor-pointer">Contact Us</h5>
+            <div className="absolute top-0 z-30 items-center hidden w-full max-w-6xl h-18 lg:flex lg:px-5 lg:h-20 space-x-20 ">
+              <img src="/logo.png" className="w-12 h-12 my-auto lg:w-12 lg:h-12" alt="" />
+              <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Home</h5>
+              <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">About Us</h5>
+              <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Our Products</h5>
+              <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Our Seller</h5>
+              <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Contact Us</h5>
             </div>
             <Carousel
               plugins={[
@@ -76,9 +76,9 @@ function Home() {
                 <div className="absolute bottom-[15%] md:bottom-[20%] lg:bottom-[25%] w-full h-auto z-30 ">
                   <div className="relative flex items-center w-full ">
                     <div className="w-full max-w-6xl pl-5 mx-auto ">
-                      <h1 className="text-3xl font-black tracking-wide text-white uppercase lg:text-5xl">Ontrowulan</h1>
-                      <h4 className="text-xl lg:text-2xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
-                      <p className="mt-2 font-thin text-white text-md lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
+                      <h1 className="text-3xl font-black tracking-wide text-white uppercase lg:text-4xl">Ontrowulan</h1>
+                      <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
+                      <p className="mt-2 text-sm font-thin text-white lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
                       <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
                       <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Read More</button>
                     </div>
@@ -91,8 +91,8 @@ function Home() {
                 <div className="absolute bottom-[15%] md:bottom-[20%] lg:bottom-[25%] w-full h-auto z-30 ">
                   <div className="relative flex items-center w-full ">
                     <div className="w-full max-w-md pl-5 mx-auto lg:max-w-5xl lg:max-w-6xl">
-                      <h1 className="text-3xl font-black tracking-wide text-white uppercase md:text-6xl ">Ontrowulan</h1>
-                      <h4 className="text-xl lg:text-2xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
+                      <h1 className="text-3xl font-black tracking-wide text-white uppercase md:text-4xl ">Ontrowulan</h1>
+                      <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
                       <p className="mt-2 font-thin text-white text-md lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
                       <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
                       <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Read More</button>
