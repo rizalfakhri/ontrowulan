@@ -48,15 +48,15 @@ function Product() {
               </div>
 
               <div className="flex flex-col items-center mt-10 mb-10 lg:mt-20 lg:flex-row lg:space-x-10 space-y-5 lg:space-y-0">
-                <div className="flex flex-col w-full border-b lg:border-r lg:w-3/12 border-brand-green/50">
+                <div className="flex flex-col w-full border-b border-b-0 lg:border-r lg:w-3/12 border-brand-green/50">
                   <h1 className="text-lg font-thin text-black ">Bahan-bahan</h1>
                   <h1 className="font-black text-2xl text-[#185445] ">100% Herbal</h1>
                 </div>
-                <div className="flex flex-col w-full border-b lg:border-r lg:w-3/12 border-brand-green/50">
+                <div className="flex flex-col w-full border-b lg:border-b-0 lg:border-r lg:w-3/12 border-brand-green/50">
                   <h1 className="text-lg font-thin text-black ">Jumlah Kapsul</h1>
                   <h1 className=" font-black text-2xl text-[#185445] ">56 Kapsul</h1>
                 </div>
-                <div className="flex flex-col w-full lg:border-r lg:w-3/12 border-brand-green/50">
+                <div className="flex flex-col w-full lg:w-3/12 border-brand-green/50">
                   <h1 className="text-lg font-thin text-black ">Cara Penyimpanan</h1>
                   <h1 className=" font-black text-2xl text-[#185445] "> Suhu 36° </h1>
                 </div>
