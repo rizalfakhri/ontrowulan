@@ -90,7 +90,7 @@ function Home() {
         <div className="flex flex-col items-center h-screen">
           <div className="flex items-center justify-center h-[90%] lg:h-[80%] w-full relative ">
             <div className="absolute top-0 z-20 w-full h-10 bg-gradient-to-b from-[#101010] to-transparent lg:h-40 hidden lg:block"></div>
-            <div className={`${fixedNavbar ? 'fixed bg-brand-green shadow-around lg:h-16 transition  duration-350' : 'absolute'}  inset-0 z-50 h-20 w-full flex items-center justify-center`}>
+            <div className={`${fixedNavbar ? 'fixed bg-brand-green shadow-around lg:h-16 transition  duration-350' : 'absolute'}  inset-0 z-50 h-20 w-full flex items-center justify-center invisible lg:visible`}>
               <div className={`${fixedNavbar ? 'fixed' : 'absolute lg:h-20'} top-0 z-30 items-center hidden w-full h-16 max-w-6xl lg:flex lg:px-5 space-x-16`}>
                 <img src="/logo.png" className="w-12 h-12 my-auto lg:w-12 lg:h-12" alt="" />
                 <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Home</h5>
@@ -203,23 +203,23 @@ function Home() {
           <div className="flex flex-col items-center justify-center w-full h-auto ">
 
             <div className="relative flex items-center justify-center w-full mx-auto mt-16 ">
-              <h4 className="absolute mt-[4.5rem] ml-2 text-6xl font-bold uppercase text-brand-green">Cerita Mereka</h4>
-              <h4 className="absolute mt-16 text-6xl font-bold uppercase text-brand-gold-darker">Cerita Mereka</h4>
+              <h4 className="absolute mt-[4.5rem] ml-2 text-4xl lg:text-6xl font-bold uppercase text-brand-green">Cerita Mereka</h4>
+              <h4 className="absolute mt-16 text-4xl font-bold uppercase lg:text-6xl text-brand-gold-darker">Cerita Mereka</h4>
             </div>
 
             <div className="flex flex-col justify-between w-full h-auto mt-10 max-w-7xl">
 
-              <div className="flex justify-between w-full h-auto mt-20 space-x-44">
-                <div className="relative w-1/2">
-                  <div className="absolute ml-5 mt-5 inset-0 rounded-lg w-[40rem] h-96 bg-brand-green shadow-around"></div>
-                  <div className="absolute inset-0 rounded-lg w-[40rem] h-96 bg-brand-gold shadow-around">
+              <div className="flex flex-col justify-between w-full h-auto px-6 mt-20 lg:px-0 lg:flex-row lg:space-x-44 lg:space-y-0 space-y-64">
+                <div className="relative w-full lg:w-1/2">
+                  <div className="absolute ml-2 lg:ml-5 mt-2 lg:mt-5 inset-0 rounded-lg w-full lg:w-[40rem] h-52 lg:h-96 bg-brand-green shadow-around"></div>
+                  <div className="absolute inset-0 rounded-lg w-full lg:w-[40rem] h-52  lg:h-96 bg-brand-gold shadow-around">
                     <div className="absolute -ml-24 h-36 bottom-8 w-44 text-brand-gold-darker">
                       <Accent className="text-brand-gold-darker"/>
                     </div>
                     {
                       testiOnePlayerActive
                         ? <>
-                            <iframe className="absolute w-full h-full rounded-lg" src="https://www.youtube.com/embed/rguiIamh4l8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+                            <iframe className="absolute w-full h-full rounded-lg" src="https://www.youtube.com/embed/rguiIamh4l8?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
                           </>
                         : <>
                           <img src="/assets/images/testimoni/1.jpg" placeholder="blur" className="absolute object-cover w-full h-full rounded-lg" />
@@ -232,9 +232,9 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="w-1/2 h-auto mt-10 ">
+                <div className="w-full h-auto mt-10 lg:w-1/2 ">
                   <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform -rotate-2">
-                    <h4 className="z-30 mx-auto font-serif text-2xl text-black/50">
+                    <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
                       Ini copywriting cerita progresi jamu,, minta teks aslinya ya ehe~, <span className="border-b-2 font-base border-brand-green">contoh point penting</span>, lalu buat copywriting agak banyakan dikit biar ada space nya wkwkwk, <span className="border-b-2 font-base border-brand-green">turun berat xx KG</span>, <span className="border-b-2 font-base border-brand-green">gelowing</span> & <span className="border-b-2 font-base border-brand-green">menemukan jati diri </span>, bingung sebenernya mau nulis apa lagi, tapi biar space nya agak banyakan dikit tulis tulisan ini aja lah, nanti diganti yang beneran ya...
                     </h4>
                   </div>
@@ -251,10 +251,11 @@ function Home() {
               </div>
 
 
-              <div className="flex justify-between  w-full mt-[15rem] space-x-32">
-                <div className="w-1/2 h-auto mt-10 ">
+              <div className="flex flex-col-reverse lg:flex-row justify-between  w-full h-auto mt-[8rem] lg:mt-[15rem] lg:space-x-32  px-6 ">
+
+                <div className="w-full h-auto lg:mt-10 lg:w-1/2 mt-[17rem] ">
                   <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform rotate-2">
-                    <h4 className="z-30 mx-auto font-serif text-2xl text-black/50">
+                    <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
                       Ini copywriting cerita progresi jamu,, minta teks aslinya ya ehe~, <span className="border-b-2 font-base border-brand-green">contoh point penting</span>, lalu buat copywriting agak banyakan dikit biar ada space nya wkwkwk, <span className="border-b-2 font-base border-brand-green">turun berat xx KG</span>, <span className="border-b-2 font-base border-brand-green">gelowing</span> & <span className="border-b-2 font-base border-brand-green">menemukan jati diri </span>, bingung sebenernya mau nulis apa lagi, tapi biar space nya agak banyakan dikit tulis tulisan ini aja lah, nanti diganti yang beneran ya...
                     </h4>
                   </div>
@@ -267,15 +268,19 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="relative w-1/2">
-                  <div className="absolute bg-[#EBA87E] rounded-full -top-16 -right-32 ml-96 mb-36 w-44 h-44"></div>
-                  <div className="absolute ml-5 mt-5 inset-0 rounded-lg w-[40rem] h-96 bg-brand-green shadow-around"></div>
-                  <div className="absolute inset-0 rounded-lg w-[40rem] h-96 bg-brand-gold shadow-around">
-                    <div className="absolute top-0 right-0 -mr-24 rounded-full h-36 bottom-8 w-44 text-brand-gold-darker" />
+                <div className="relative w-full lg:w-1/2">
+                  <div className="overflow-hidden">
+                    <div className="absolute bg-[#EBA87E] rounded-full -top-16 lg:-right-32  lg:ml-96 mb-36 lg:w-44 lg:h-44 w-0 h-0 "></div>
+                  </div>
+                  <div className="absolute ml-2 lg:ml-5 mt-2 lg:mt-5 inset-0 rounded-lg w-full h-52 lg:w-[40rem] lg:h-96 bg-brand-green shadow-around"></div>
+                  <div className="absolute inset-0 rounded-lg w-full h-52  lg:w-[40rem] lg:h-96 bg-brand-gold shadow-around">
+                    <div className="absolute visible -ml-24 h-36 bottom-8 w-44 text-brand-green lg:invisible">
+                      <Accent className="text-gray-500/50"/>
+                    </div>
                     {
                       testiTwoPlayerActive
                         ? <>
-                            <iframe className="z-50 w-full h-full rounded-lg" src="https://www.youtube.com/embed/aQIA2Qjm3NA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+                            <iframe className="absolute z-50 w-full h-full rounded-lg" src="https://www.youtube.com/embed/aQIA2Qjm3NA?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
                           </>
                         : <>
                           <img src="/assets/images/testimoni/2.jpg" placeholder="blur" className="absolute object-cover w-full h-full rounded-lg" />
@@ -289,18 +294,20 @@ function Home() {
                 </div>
               </div>
 
-              <div className="flex justify-between  w-full mt-[15rem] space-x-44">
-                <div className="relative w-1/2">
-                  <div className="absolute mb-20 -top-10 -right-[20rem] ml-[30rem] w-44 h-44">
+              <div className="flex flex-col justify-between w-full h-auto px-6 mt-44 lg:px-0 lg:flex-row lg:space-x-44 lg:space-y-0 space-y-64">
+                <div className="relative w-full lg:w-1/2">
+                  <div className="absolute mb-20 -top-10 -right-[20rem] ml-[30rem] w-0 lg:w-44 h-0 lg:h-44 ">
                       <Accent className="text-gray-500/50"/>
                   </div>
-                  <div className="absolute ml-5 mt-5 inset-0 rounded-lg w-[40rem] h-96 bg-brand-green shadow-around"></div>
-                  <div className="absolute inset-0 rounded-lg w-[40rem] h-96 bg-brand-gold shadow-around">
-                    <div className="absolute top-0 right-0 -mr-24 rounded-full h-36 bottom-8 w-44 text-brand-gold-darker" />
+                  <div className="absolute ml-2 lg:ml-5 mt-2 lg:mt-5 inset-0 rounded-lg w-full lg:w-[40rem] h-52 lg:h-96 bg-brand-green shadow-around"></div>
+                  <div className="absolute inset-0 rounded-lg w-full lg:w-[40rem] h-52  lg:h-96 bg-brand-gold shadow-around">
+                    <div className="absolute visible -ml-24 h-36 bottom-8 w-44 text-brand-gold-darker lg:invisible">
+                      <Accent className=" text-[#EBA87E]"/>
+                    </div>
                     {
                       testiThreePlayerActive
                         ? <>
-                            <iframe className="z-50 w-full h-full rounded-lg" src="https://www.youtube.com/embed/Bh3YcEpGMz4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+                            <iframe className="absolute w-full h-full rounded-lg" src="https://www.youtube.com/embed/Bh3YcEpGMz4?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
                           </>
                         : <>
                           <img src="/assets/images/testimoni/3.jpg" placeholder="blur" className="absolute object-cover w-full h-full rounded-lg" />
@@ -313,9 +320,9 @@ function Home() {
                   </div>
                 </div>
 
-                <div className="w-1/2 h-auto mt-10 ">
+                <div className="w-full h-auto mt-10 lg:w-1/2 ">
                   <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform -rotate-2">
-                    <h4 className="z-30 mx-auto font-serif text-2xl text-black/50">
+                    <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
                       Ini copywriting cerita progresi jamu,, minta teks aslinya ya ehe~, <span className="border-b-2 font-base border-brand-green">contoh point penting</span>, lalu buat copywriting agak banyakan dikit biar ada space nya wkwkwk, <span className="border-b-2 font-base border-brand-green">turun berat xx KG</span>, <span className="border-b-2 font-base border-brand-green">gelowing</span> & <span className="border-b-2 font-base border-brand-green">menemukan jati diri </span>, bingung sebenernya mau nulis apa lagi, tapi biar space nya agak banyakan dikit tulis tulisan ini aja lah, nanti diganti yang beneran ya...
                     </h4>
                   </div>
@@ -324,7 +331,7 @@ function Home() {
                     <div className="z-30 w-12 h-1 bg-brand-green"></div>
                     <div className="flex flex-col ">
                       <h4 className="font-serif text-lg font-black text-brand-gold-darker">Patricia Kamalaeng</h4>
-                      <h4 className="font-serif text-lg italic text-gray-500/50">Pencerita Mistis & Fans Sampoerna Mild</h4>
+                      <h4 className="font-serif text-lg italic text-gray-500/50">Pencerita Mistis & Pecinta Sampoerna Mild</h4>
                     </div>
                   </div>
                 </div>
@@ -340,9 +347,9 @@ function Home() {
 
       <footer className="mt-14">
         <div className="w-full h-3 bg-brand-gold-darker" />
-        <div className="w-full h-auto bg-gradient-to-br from-[#246051] to-brand-green">
+        <div className="w-full h-auto bg-gradient-to-br from-[#246051] to-brand-green relative">
 
-          <div className="flex flex-col items-center justify-center py-14">
+          <div className="flex flex-col items-center justify-center invisible h-0 py-8 lg:h-auto lg:py-14 lg:visible">
             <div className="flex items-center justify-between w-full h-auto max-w-6xl py-2 mt-5 border-b border-brand-gold-darker/90">
               <img src="/logo-text.png" className="w-auto h-10" />
               <p className="font-medium text-brand-gold">Copyright &copy; 2021 Ontrowulan  - All rights reserved.</p>
@@ -357,6 +364,23 @@ function Home() {
             </div>
           </div>
 
+          <div className="relative flex flex-col items-center justify-center pb-14 lg:hidden">
+            <div className="flex flex-col items-center justify-between w-full h-auto px-2 py-2 mx-2 border-b border-brand-gold-darker/90">
+              <img src="/logo-text.png" className="w-auto h-7" />
+            </div>
+            <div className="flex flex-col items-center justify-between w-full h-auto max-w-6xl mt-1">
+              <p className="font-serif text-sm italic font-thin text-brand-gold-darker">Ramuan Alam Warisan Leluhur</p>
+              <div className="flex items-center mt-1 space-x-3">
+                <Instagram className="w-6 h-6 text-brand-gold-darker"/>
+                <Facebook className="w-6 h-6 text-brand-gold-darker"/>
+                <Youtube className="w-6 h-6 text-brand-gold-darker"/>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute bottom-0 block w-full mb-5 lg:hidden ">
+            <p className="text-xs text-center text-brand-gold">Copyright &copy; 2021 Ontrowulan  - All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
