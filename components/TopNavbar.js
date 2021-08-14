@@ -18,13 +18,13 @@ function TopNavbar() {
       <h1 className="text-xl font-black tracking-[.8rem] text-bold uppercase my-auto">Ontrowulan</h1>
       <div className="flex items-center space-x-3">
         <Link href="https://www.instagram.com/ontrowulan/">
-          <Instagram className="text-black opacity-50 w-7 h-7"/>
+          <Instagram className="text-black opacity-50 w-7 h-7 cursor-pointer"/>
         </Link>
         <Link href="https://web.facebook.com/ontrowulanofficials">
-          <Facebook className="text-black opacity-50 w-7 h-7"/>
+          <Facebook className="text-black opacity-50 w-7 h-7 cursor-pointer"/>
         </Link>
         <Link href="https://www.youtube.com/channel/UC_5UYduo8shv_Jh00Ql7R1A">
-          <Youtube className="text-black opacity-50 w-7 h-7"/>
+          <Youtube className="text-black opacity-50 w-7 h-7 cursor-pointer"/>
         </Link>
       </div>
     </div>
