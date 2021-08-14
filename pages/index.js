@@ -15,9 +15,13 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import { autoplayPlugin, arrowsPlugin } from '@brainhubeu/react-carousel'
 import {useState} from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import productImage from '../public/assets/images/products/diet-capsule.png'
 
-import testi1 from '../public/assets/images/testimoni/1.jpg'
+import Navbar from '../components/Navbar'
+import TopNavbar from '../components/TopNavbar';
+import MobileNavbar from '../components/MobileNavbar';
+import Footer from '../components/Footer';
 
 
 const Carousel = dynamic(() => import('@brainhubeu/react-carousel'), {
@@ -56,7 +60,7 @@ function Home() {
         if( slideLeft ) {
           slideLeft.click()
         }
-        else
+        else if(slideRight)
         {
 
           slideRight.click()
@@ -74,32 +78,17 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="h-auto ">
-        <div className="flex justify-between w-full max-w-6xl px-5 bg-white h-14 py-auto lg:hidden lg:px-5 justify-items-center bg-brand-green">
-            <img src="/logo.png" className="my-auto w-9 h-9" alt="" />
-            <Menu className="my-auto w-9 h-9 text-brand-gold-darker" />
-        </div>
-        <div className="justify-between hidden w-full max-w-6xl mx-auto bg-white lg:flex lg:px-5 h-14 justify-items-center">
-          <h1 className="text-xl font-black tracking-[.8rem] text-bold uppercase my-auto">Ontrowulan</h1>
-          <div className="flex items-center space-x-3">
-            <Instagram className="text-black opacity-50 w-7 h-7"/>
-            <Facebook className="text-black opacity-50 w-7 h-7"/>
-            <Youtube className="text-black opacity-50 w-7 h-7"/>
-          </div>
-        </div>
+      <main className="h-auto mb-10">
+
+        <MobileNavbar />
+
+        <TopNavbar />
+
         <div className="flex flex-col items-center h-screen">
           <div className="flex items-center justify-center h-[90%] lg:h-[80%] w-full relative ">
-            <div className="absolute top-0 z-20 w-full h-10 bg-gradient-to-b from-[#101010] to-transparent lg:h-40 hidden lg:block"></div>
-            <div className={`${fixedNavbar ? 'fixed bg-brand-green shadow-around lg:h-16 transition  duration-350' : 'absolute'}  inset-0 z-50 h-20 w-full flex items-center justify-center invisible lg:visible`}>
-              <div className={`${fixedNavbar ? 'fixed' : 'absolute lg:h-20'} top-0 z-30 items-center hidden w-full h-16 max-w-6xl lg:flex lg:px-5 space-x-16`}>
-                <img src="/logo.png" className="w-12 h-12 my-auto lg:w-12 lg:h-12" alt="" />
-                <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Home</h5>
-                <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Tentang Kami</h5>
-                <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Produk</h5>
-                <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Agen</h5>
-                <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Hubungi Kami</h5>
-              </div>
-            </div>
+
+            <Navbar />
+
             <Carousel
               plugins={[
                 'infinite',
@@ -131,7 +120,9 @@ function Home() {
                       <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
                       <p className="mt-2 text-sm font-thin text-white lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
                       <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
-                      <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
+                      <Link href="/product">
+                        <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -146,7 +137,9 @@ function Home() {
                       <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
                       <p className="mt-2 font-thin text-white text-md lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
                       <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
-                      <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
+                      <Link href="/product">
+                        <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -161,7 +154,9 @@ function Home() {
                       <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
                       <p className="mt-2 font-thin text-white text-md lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
                       <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
-                      <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
+                      <Link href="/product">
+                        <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -345,44 +340,7 @@ function Home() {
 
       </main>
 
-      <footer className="mt-14">
-        <div className="w-full h-3 bg-brand-gold-darker" />
-        <div className="w-full h-auto bg-gradient-to-br from-[#246051] to-brand-green relative">
-
-          <div className="flex flex-col items-center justify-center invisible h-0 py-8 lg:h-auto lg:py-14 lg:visible">
-            <div className="flex items-center justify-between w-full h-auto max-w-6xl py-2 mt-5 border-b border-brand-gold-darker/90">
-              <img src="/logo-text.png" className="w-auto h-10" />
-              <p className="font-medium text-brand-gold">Copyright &copy; 2021 Ontrowulan  - All rights reserved.</p>
-            </div>
-            <div className="flex items-center justify-between w-full h-auto max-w-6xl mt-1">
-              <p className="font-serif text-lg italic font-thin text-brand-gold-darker">Ramuan Alam Warisan Leluhur</p>
-              <div className="flex items-center mt-1 space-x-3">
-                <Instagram className="w-6 h-6 text-brand-gold-darker"/>
-                <Facebook className="w-6 h-6 text-brand-gold-darker"/>
-                <Youtube className="w-6 h-6 text-brand-gold-darker"/>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative flex flex-col items-center justify-center pb-14 lg:hidden">
-            <div className="flex flex-col items-center justify-between w-full h-auto px-2 py-2 mx-2 border-b border-brand-gold-darker/90">
-              <img src="/logo-text.png" className="w-auto h-7" />
-            </div>
-            <div className="flex flex-col items-center justify-between w-full h-auto max-w-6xl mt-1">
-              <p className="font-serif text-sm italic font-thin text-brand-gold-darker">Ramuan Alam Warisan Leluhur</p>
-              <div className="flex items-center mt-1 space-x-3">
-                <Instagram className="w-6 h-6 text-brand-gold-darker"/>
-                <Facebook className="w-6 h-6 text-brand-gold-darker"/>
-                <Youtube className="w-6 h-6 text-brand-gold-darker"/>
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute bottom-0 block w-full mb-5 lg:hidden ">
-            <p className="text-xs text-center text-brand-gold">Copyright &copy; 2021 Ontrowulan  - All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
