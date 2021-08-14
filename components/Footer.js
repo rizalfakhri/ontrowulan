@@ -1,14 +1,9 @@
 import {
   Instagram,
   Facebook,
-  Youtube,
-  ArrowRight,
-  ArrowLeft,
-  Menu,
-  ArrowPointRight,
-  Accent,
-  Play
+  Youtube
 } from '../icons'
+import Link from 'next/link'
 
 function Footer() {
 
@@ -26,9 +21,15 @@ function Footer() {
             <div className="flex items-center justify-between w-full h-auto max-w-6xl mt-1">
               <p className="font-serif text-lg italic font-thin text-brand-gold-darker">Ramuan Alam Warisan Leluhur</p>
               <div className="flex items-center mt-1 space-x-3">
-                <Instagram className="w-6 h-6 text-brand-gold-darker"/>
-                <Facebook className="w-6 h-6 text-brand-gold-darker"/>
-                <Youtube className="w-6 h-6 text-brand-gold-darker"/>
+                <Link href="https://www.instagram.com/ontrowulan/">
+                  <Instagram className="w-6 h-6 cursor-pointer text-brand-gold-darker"/>
+                </Link>
+                <Link href="https://web.facebook.com/ontrowulanofficials">
+                  <Facebook className="w-6 h-6 cursor-pointer text-brand-gold-darker"/>
+                </Link>
+                <Link href="https://www.youtube.com/channel/UC_5UYduo8shv_Jh00Ql7R1A">
+                  <Youtube className="w-6 h-6 cursor-pointer text-brand-gold-darker"/>
+                </Link>
               </div>
             </div>
           </div>
@@ -40,9 +41,15 @@ function Footer() {
             <div className="flex flex-col items-center justify-between w-full h-auto max-w-6xl mt-1">
               <p className="font-serif text-sm italic font-thin text-brand-gold-darker">Ramuan Alam Warisan Leluhur</p>
               <div className="flex items-center mt-1 space-x-3">
-                <Instagram className="w-6 h-6 text-brand-gold-darker"/>
-                <Facebook className="w-6 h-6 text-brand-gold-darker"/>
-                <Youtube className="w-6 h-6 text-brand-gold-darker"/>
+                <Link href="https://www.instagram.com/ontrowulan/">
+                  <Instagram className="w-6 h-6 cursor-pointer text-brand-gold-darker"/>
+                </Link>
+                <Link href="https://web.facebook.com/ontrowulanofficials">
+                  <Facebook className="w-6 h-6 cursor-pointer text-brand-gold-darker"/>
+                </Link>
+                <Link href="https://www.youtube.com/channel/UC_5UYduo8shv_Jh00Ql7R1A">
+                  <Youtube className="w-6 h-6 cursor-pointer text-brand-gold-darker"/>
+                </Link>
               </div>
             </div>
           </div>

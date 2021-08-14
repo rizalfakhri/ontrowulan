@@ -23,6 +23,8 @@ import TopNavbar from '../components/TopNavbar';
 import MobileNavbar from '../components/MobileNavbar';
 import Footer from '../components/Footer';
 
+import PurchaseModal from '../components/PurchaseModal'
+
 
 const Carousel = dynamic(() => import('@brainhubeu/react-carousel'), {
   ssr: false,
@@ -30,6 +32,7 @@ const Carousel = dynamic(() => import('@brainhubeu/react-carousel'), {
 
 function Home() {
 
+  const [ isOpen, setIsOpen ] = useState(false)
   const [ fixedNavbar, setFixedNavbar ] = useState(false)
 
   const [ testiOnePlayerActive, setTestiOnePlayerActive ] = useState(false)
@@ -186,7 +189,7 @@ function Home() {
               <div className="w-24 h-1 mt-5 bg-gray-400 "></div>
               <div className="absolute bottom-0 right-0 flex items-center justify-between w-full h-20 pl-8 lg:pl-14">
                 <h1 className="text-3xl font-black text-brand-gold-darker">Rp. 220.000</h1>
-                <div className="w-20 h-20 bg-[#EBA87E] p-2">
+                <div className="w-20 h-20 bg-[#EBA87E] p-2 cursor-pointer" onClick={() => setIsOpen(true)}>
                   <ArrowPointRight className="text-white" />
                 </div>
               </div>
@@ -337,6 +340,8 @@ function Home() {
           </div>
 
         </div>
+
+        <PurchaseModal open={isOpen} opener={setIsOpen}/>
 
       </main>
 

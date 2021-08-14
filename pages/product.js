@@ -5,8 +5,12 @@ import Footer from '../components/Footer';
 import Head from 'next/head'
 import Image from 'next/image'
 import productImage from '../public/assets/images/products/diet-capsule.png'
+import PurchaseModal from '../components/PurchaseModal'
+import { useState } from 'react'
 
 function Product() {
+
+  const [ isOpen, setIsOpen ] = useState(false)
 
   return (
     <>
@@ -43,7 +47,7 @@ function Product() {
               <p className="font-serif text-sm lg:text-lg text-[#185445] mt-8">Produk jejamuan herbal yang dibuat dari bahan alam pilihan tanpa bahan kimia berkhasiat membantu menyehatkan tubuh tanpa efek samping.</p>
 
               <div className="flex flex-col-reverse mt-10 lg:items-center lg:flex-row lg:space-x-10">
-                <button className="px-3 py-2 mt-6 text-lg font-black uppercase rounded-lg lg:mt-0 h-14 lg:w-52 bg-brand-green text-brand-gold">Beli Sekarang</button>
+                <button className="px-3 py-2 mt-6 text-lg font-black uppercase rounded-lg lg:mt-0 h-14 lg:w-52 bg-brand-green text-brand-gold" onClick={() => setIsOpen(true)}>Beli Sekarang</button>
                 <h4 className="text-3xl font-black  text-[#185445]">Rp 220.000<span className="text-xl font-thin text-black">/botol</span></h4>
               </div>
 
@@ -66,6 +70,8 @@ function Product() {
           </div>
 
         </div>
+
+        <PurchaseModal open={isOpen} opener={setIsOpen}/>
       </main>
       <Footer />
     </>
