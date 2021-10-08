@@ -119,10 +119,10 @@ function Home() {
                 <div className="absolute bottom-[15%] md:bottom-[20%] lg:bottom-[25%] w-full h-auto z-30 ">
                   <div className="relative flex items-center w-full ">
                     <div className="w-full max-w-6xl pl-5 mx-auto ">
-                      <h1 className="text-3xl font-black tracking-wide text-white uppercase lg:text-4xl">Ontrowulan</h1>
+                      <h1 className="text-3xl font-black tracking-wide text-white uppercase lg:text-4xl">Jamu Ontrowulan</h1>
                       <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
-                      <p className="mt-2 text-sm font-thin text-white lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
-                      <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
+                      <p className="mt-2 font-thin text-white text-md ">Produk jejamuan yang terbuat dari Ramuan Alam Warisan Leluhur.</p>
+                      <p className="text-xs font-thin text-white ">EST. 2021</p>
                       <Link href="/product">
                         <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
                       </Link>
@@ -136,10 +136,10 @@ function Home() {
                 <div className="absolute bottom-[15%] md:bottom-[20%] lg:bottom-[25%] w-full h-auto z-30 ">
                   <div className="relative flex items-center w-full ">
                     <div className="w-full max-w-md pl-5 mx-auto lg:max-w-5xl lg:max-w-6xl">
-                      <h1 className="text-3xl font-black tracking-wide text-white uppercase md:text-4xl ">Ontrowulan</h1>
+                      <h1 className="text-3xl font-black tracking-wide text-white uppercase md:text-4xl ">Jamu Ontrowulan</h1>
                       <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
-                      <p className="mt-2 font-thin text-white text-md lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
-                      <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
+                      <p className="mt-2 font-thin text-white text-md ">Produk jejamuan yang terbuat dari Ramuan Alam Warisan Leluhur.</p>
+                      <p className="text-xs font-thin text-white ">EST. 2021</p>
                       <Link href="/product">
                         <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
                       </Link>
@@ -153,10 +153,10 @@ function Home() {
                 <div className="absolute bottom-[15%] md:bottom-[20%] lg:bottom-[25%] w-full h-auto z-30 ">
                   <div className="relative flex items-center w-full ">
                     <div className="w-full max-w-md pl-5 mx-auto lg:max-w-5xl lg:max-w-6xl">
-                      <h1 className="text-3xl font-black tracking-wide text-white uppercase md:text-4xl ">Ontrowulan</h1>
+                      <h1 className="text-3xl font-black tracking-wide text-white uppercase md:text-4xl ">Jamu Ontrowulan</h1>
                       <h4 className="text-xl lg:text-xl mt-6 font-semibold lg:tracking-[.6rem] tracking-[.4rem] text-white uppercase">Kapsul Diet Herbal</h4>
-                      <p className="mt-2 font-thin text-white text-md lg:text-lg ">Meningkatkan metabolisme, Mencerahkan kulit</p>
-                      <p className="font-thin text-white text-md lg:text-lg ">Efektif membantu penurunan berat badan</p>
+                      <p className="mt-2 font-thin text-white text-md ">Produk jejamuan yang terbuat dari Ramuan Alam Warisan Leluhur.</p>
+                      <p className="text-xs font-thin text-white ">EST. 2021</p>
                       <Link href="/product">
                         <button className="w-40 h-10 px-3 mt-5 font-black text-white uppercase py-auto bg-brand-gold-darker">Selengkapnya</button>
                       </Link>
@@ -231,17 +231,20 @@ function Home() {
                 </div>
 
                 <div className="w-full h-auto mt-10 lg:w-1/2 ">
-                  <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform -rotate-2">
-                    <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
+                  <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform rotate-2">
+                    {/*
+
                       Ini copywriting cerita progresi jamu,, minta teks aslinya ya ehe~, <span className="border-b-2 font-base border-brand-green">contoh point penting</span>, lalu buat copywriting agak banyakan dikit biar ada space nya wkwkwk, <span className="border-b-2 font-base border-brand-green">turun berat xx KG</span>, <span className="border-b-2 font-base border-brand-green">gelowing</span> & <span className="border-b-2 font-base border-brand-green">menemukan jati diri </span>, bingung sebenernya mau nulis apa lagi, tapi biar space nya agak banyakan dikit tulis tulisan ini aja lah, nanti diganti yang beneran ya...
+                    */}
+                    <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
+                      Aku pernah di titik krisis percaya pada diri sendiri, dapet body shaming setiap hari, insecure parah, sampe engak menstruasi selama 6 bulan, tapi semua berubah sejak aku bertemu dengan Ontrowulan.
                     </h4>
                   </div>
 
                   <div className="relative flex items-center mt-10 space-x-3">
-                    <div className="z-30 w-12 h-1 bg-brand-green"></div>
+                    <div className="z-30 w-8 h-1 bg-brand-green"></div>
                     <div className="flex flex-col ">
                       <h4 className="font-serif text-lg font-black text-brand-gold-darker">Jennys Ellenadiva</h4>
-                      <h4 className="font-serif text-lg italic text-gray-500/50">Pokalis Blekping</h4>
                     </div>
                   </div>
                 </div>
@@ -252,17 +255,17 @@ function Home() {
               <div className="flex flex-col-reverse lg:flex-row justify-between  w-full h-auto mt-[8rem] lg:mt-[15rem] lg:space-x-32  px-6 ">
 
                 <div className="w-full h-auto lg:mt-10 lg:w-1/2 mt-[17rem] ">
-                  <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform rotate-2">
+                  <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform -rotate-2">
                     <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
-                      Ini copywriting cerita progresi jamu,, minta teks aslinya ya ehe~, <span className="border-b-2 font-base border-brand-green">contoh point penting</span>, lalu buat copywriting agak banyakan dikit biar ada space nya wkwkwk, <span className="border-b-2 font-base border-brand-green">turun berat xx KG</span>, <span className="border-b-2 font-base border-brand-green">gelowing</span> & <span className="border-b-2 font-base border-brand-green">menemukan jati diri </span>, bingung sebenernya mau nulis apa lagi, tapi biar space nya agak banyakan dikit tulis tulisan ini aja lah, nanti diganti yang beneran ya...
+                      Saya dikasih challenge diet 14 hari bersama Ontrowulan, dan selama 14 hari berat badan saya <span className="border-b-2 font-base border-brand-green">turun sebanyak 2kg!</span>, badan kerasa lebih seger, sehat & enteng.
+                      {` `}cara kerja kapsul nya bener-bener lembut banget, tapi hasilnya amazing!
                     </h4>
                   </div>
 
                   <div className="relative flex items-center mt-10 space-x-3">
-                    <div className="z-30 w-12 h-1 bg-brand-green"></div>
+                    <div className="z-30 w-8 h-1 bg-brand-green"></div>
                     <div className="flex flex-col ">
-                      <h4 className="font-serif text-lg font-black text-brand-gold-darker">Muhammad Ing Abdul Qodir Jaelani</h4>
-                      <h4 className="font-serif text-lg italic text-gray-500/50">Pengembara Khatulistiwa</h4>
+                      <h4 className="font-serif text-lg font-black text-brand-gold-darker">Kurniawan Prasetyo</h4>
                     </div>
                   </div>
                 </div>
@@ -319,17 +322,17 @@ function Home() {
                 </div>
 
                 <div className="w-full h-auto mt-10 lg:w-1/2 ">
-                  <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform -rotate-2">
+                  <div className="relative w-full h-auto p-5 rounded-lg bg-brand-gold/40 transform rotate-2">
                     <h4 className="z-30 mx-auto font-serif text-xl lg:text-2xl text-black/50">
-                      Ini copywriting cerita progresi jamu,, minta teks aslinya ya ehe~, <span className="border-b-2 font-base border-brand-green">contoh point penting</span>, lalu buat copywriting agak banyakan dikit biar ada space nya wkwkwk, <span className="border-b-2 font-base border-brand-green">turun berat xx KG</span>, <span className="border-b-2 font-base border-brand-green">gelowing</span> & <span className="border-b-2 font-base border-brand-green">menemukan jati diri </span>, bingung sebenernya mau nulis apa lagi, tapi biar space nya agak banyakan dikit tulis tulisan ini aja lah, nanti diganti yang beneran ya...
+                      Capek dari dulu perut gue selalu buncit, udah cobain segala cara buat diet, tapi gagal terus soalnya gue hobby makan bangetttt 😆, uda gitu gue juga insomnia.. tapi sorry itu dulu, sekarang <span className="border-b-2 font-base border-brand-green">perut gue rata!</span> dan <span className="border-b-2 font-base border-brand-green">bye insomnia!</span>.
+                      {` `} Thank you Ontrowulan.
                     </h4>
                   </div>
 
                   <div className="relative flex items-center mt-10 space-x-3">
-                    <div className="z-30 w-12 h-1 bg-brand-green"></div>
+                    <div className="z-30 w-8 h-1 bg-brand-green"></div>
                     <div className="flex flex-col ">
-                      <h4 className="font-serif text-lg font-black text-brand-gold-darker">Patricia Kamalaeng</h4>
-                      <h4 className="font-serif text-lg italic text-gray-500/50">Pencerita Mistis & Pecinta Sampoerna Mild</h4>
+                      <h4 className="font-serif text-lg font-black text-brand-gold-darker">Patricia Yuliana</h4>
                     </div>
                   </div>
                 </div>
@@ -341,11 +344,13 @@ function Home() {
 
         </div>
 
+        <div className="mb-44"></div>
+
         <PurchaseModal open={isOpen} opener={setIsOpen}/>
 
       </main>
 
-      <Footer />
+      <Footer  />
     </div>
   )
 }

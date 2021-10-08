@@ -19,6 +19,11 @@ module.exports = {
         '3/4': '75%',
         '4/5': '80%',
         '11/12': '91%',
+      },
+      fontFamily: {
+        'josefin-slab': ['"Josefin Slab"'],
+        'cormorant-infant': ['"Cormorant Infant"'],
+        'poppins': ['Poppins']
       }
     },
   },
