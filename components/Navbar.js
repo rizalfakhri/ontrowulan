@@ -35,7 +35,9 @@ function Navbar({ type }) {
           <Link href="/">
             <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Home</h5>
           </Link>
-          <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Tentang Kami</h5>
+          <Link href="/about">
+            <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Tentang Kami</h5>
+          </Link>
           <Link href="/product">
             <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Produk</h5>
           </Link>
