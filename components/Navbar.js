@@ -41,8 +41,9 @@ function Navbar({ type }) {
           <Link href="/product">
             <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Produk</h5>
           </Link>
-          <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Agen</h5>
-          <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Hubungi Kami</h5>
+          <Link href="/contact-us">
+            <h5 className="text-white text-md hover:text-brand-gold transition duration-150 hover:cursor-pointer">Hubungi Kami</h5>
+          </Link>
         </div>
       </div>
     </>

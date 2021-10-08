@@ -7,6 +7,9 @@ import Menu  from "./Menu";
 import ArrowPointRight from './ArrowPointRight'
 import Accent from './Accent'
 import Play from './Play'
+import Email from './Email'
+import Whatsapp from './Whatsapp'
+import Marker from './Marker'
 
 export {
   Instagram,
@@ -17,5 +20,8 @@ export {
   Menu,
   ArrowPointRight,
   Accent,
-  Play
+  Play,
+  Email,
+  Whatsapp,
+  Marker
 }
